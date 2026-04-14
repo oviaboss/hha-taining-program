@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body style="font-family: Arial; margin: 40px;">
+
+  <h1>Welcome, <span id="user"></span></h1>
+
+  <h2>📚 Modules</h2>
+
+  <ul>
+    <li><a href="module1.html">Module 1</a></li>
+    <li><a href="quiz1.html">Quiz 1</a></li>
+  </ul>
+
+  <h2>🏆 Certificate</h2>
+  <p>Complete all modules to unlock certificate.</p>
+
+  <script>
+    document.getElementById("user").innerText =
+      localStorage.getItem("studentName") || "Student";
+  </script>
+
+</body>
+</html>
