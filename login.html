@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Login</title>
+</head>
+<body style="font-family: Arial; text-align:center; margin-top:100px;">
+
+  <h1>HHA Student Login</h1>
+
+  <input id="name" placeholder="Enter your name"><br><br>
+
+  <button onclick="login()">Login</button>
+
+  <script>
+    function login() {
+      let name = document.getElementById("name").value;
+      localStorage.setItem("studentName", name);
+      window.location.href = "dashboard.html";
+    }
+  </script>
+
+</body>
+</html>
